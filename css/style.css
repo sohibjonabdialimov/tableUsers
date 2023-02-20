@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+body{
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+a{
+  color: #333;
+}
+section{
+  margin: 20px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+section.show header{
+  background-color: rgb(220, 227, 243);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+}
+.hero__title{
+  font-weight: 700;
+}
+.header__title h3{
+  display: inline-block;
+}
+.header__title p{
+  font-weight: 600;
+  display: none;
+}
+section.show .header__title p{
+  display: inline-block;
+}
+section.show .header__title h3{
+  display: none;
+}
+
+.header__icons i{
+  font-size: 20px;
+}
+
+.header__icons .header__trash{
+  display: none;
+}
+section.show .header__icons .header__signal{
+  display: none;
+}
+section.show .header__icons .header__trash{
+  display: block;
+}
+.hero__item{
+  display: grid;
+  grid-template-columns: 21% 25% 18% 18% 18%;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+  transition: 0.2s;
+}
+.hero__item:last-child{
+  border-bottom: 1px solid #ddd;
+}
+.hero__item:hover{
+  background-color: #f7f7f7;
+}
+.hero__link{
+  padding: 0 20px;
+}
+.hero__link:not(:first-child){
+  text-align: end;
+}
+.main__end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 25px;
+}
+.main__end form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer{
+  padding: 0px 20px 0 20px;
+}
+input[type="checkbox"]{
+  font-size: 20px;
+  margin-right: 10px;
+}
+input:checked header{
+  background-color: #00f;
+}
+.hero__item.styles{
+  background-color: rgb(220, 227, 243);
+}
+.hero__item.styles:hover{
+  background-color: rgb(198, 206, 226);
+}
